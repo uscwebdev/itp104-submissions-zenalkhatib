@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ice Cream Order Form</title>
+        <h1>Ice Cream Order Form</h1>
+
+        <style>
+            h1{
+                color: lightpink;
+                font-family: fantasy;
+                text-align: center;
+            }
+
+            #main{
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .form-row {
+			margin: 10px 0px;
+			display: flex;
+            padding: 3px;
+		    }
+		    
+            .left-col {
+			width: 200px;
+		    }
+
+            #footer {
+			background-color: #a8d5dc;
+			color: #FFF;
+			text-align: center;
+			height: 50px;
+			line-height: 50px;
+			font-size: 0.8em;}
+
+            #submit{
+                margin-right: auto;
+                margin-left: auto;
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+    <div id="main">
+        <form action="confirmation.html">
+			<div class="form-row">
+
+				<div class="left-col">
+					<label for="name-id">Name:</label>
+				</div>
+
+				<input type="text" id="name-id" placeholder="Jane Doe">
+			</div>
+
+			<div class="form-row">
+
+				<div class="left-col">
+					<label for="email-id">Email:</label>
+				</div>
+
+				<input type="email" id="email-id" placeholder="jdoe@usc.edu">
+			</div>
+
+			<div class="form-row">
+				<div class="left-col">
+					Size
+				</div>
+
+				<label>
+					<input type="radio" name="student">
+					1 scoop
+				</label>
+
+				<label>
+					<input type="radio" name="student">
+					2 scoop
+				</label>
+
+                <label>
+					<input type="radio" name="student">
+					3 scoop
+				</label>
+                    
+
+			</div>
+
+			<div class="form-row">
+				<div class="left-col">
+					Toppings:
+				</div>
+
+				<label>
+					<input type="checkbox">
+                    
+				</label>
+                    Fruit
+				<label>
+					<input type="checkbox">
+                    
+				</label>
+                    Honey
+				<label>
+					<input type="checkbox">
+					
+				</label>
+                    Cookie Crumbs
+			</div>
+
+			<div class="form-row">
+				<div class="left-col">
+					<label for="subject-id">Flavors:</label>
+				</div>
+
+				<select id="subject-id">
+					<option>Vanilla</option>
+					<option>Chocolate</option>
+					<option>Swirl</option>
+				</select>
+			</div>
+
+			<div class="form-row">
+				<div class="left-col">
+					<label for="msg-id">Additional Comments:</label>
+				</div>
+
+				<textarea id="msg-id" placeholder="Allergies, substiutions, etc..."></textarea>
+			</div>
+
+			<div class="submit">
+				<button type="submit">Send</button>
+				<button type="reset">Clear</button>
+			</div>
+
+            <div class="form-row">
+				<div class="left-col">
+				    I accept terms and conditions
+				</div>
+
+				<label>
+					<input type="checkbox">
+                    
+				</label>
+		</form>
+
+	</div> <!-- #main -->
+
+        <div id="footer">
+		    Zena Alkhatib &copy; 2023
+	    </div> <!-- #footer -->
+
+    </body>
+</html>
