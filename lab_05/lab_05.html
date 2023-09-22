@@ -2,17 +2,29 @@
 <html>
     <head>
         <title>Ice Cream Order Form</title>
-        <h1>Ice Cream Order Form</h1>
+        
+		
 
         <style>
             h1{
-                color: lightpink;
+                color: rgb(250, 221, 225);
                 font-family: fantasy;
                 text-align: center;
 				height: 100px;
 			
             }
 
+			#header {
+			background-image: url('img/icecream.jpeg');
+			background-size: cover;
+			background-position: center;
+			color: #b76e6e;
+			font-size: 1.5em;
+			text-align: center;
+			text-shadow: 0px 0px 10px #000;
+			height: 200px;
+			line-height: 200px;
+				}
             #main{
                 width: 500px;
 				height: 350px;
@@ -45,9 +57,13 @@
             }
 
         </style>
+
     </head>
 
     <body>
+		<div id="header">
+			<h1>Ice Cream Order Form</h1>
+		</div>
 
     <div id="main">
         <form action="confirmation.html">
