@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calendar | June</title>
+		
+        <style>
+			body{
+                margin:0px;
+            }
+            #header{
+				height: 250px;
+                width: 1100px;
+                text-align: center;
+                background-image: url(img/header.jpeg);
+                background-size: cover;
+			    background-position:center;
+			    color: #FFF;
+			    font-size: 2em;
+			    text-shadow: 0px 0px 10px #000;
+			    line-height: 250px;
+                margin-right: auto;
+                margin-left: auto;
+                }
+            
+            #main {
+			    width: 1100px;  
+                margin-left: auto;
+                margin-right: auto;              
+                }
+                
+
+            th {
+			    border: 1px solid #000000;
+                border-bottom: 2px black;
+			    text-align: center;
+			    width: 1100px;
+			    padding: 10px 0px;
+                height:20px;
+		        }
+
+		    td {
+			    border: 1px solid #000000;
+			    text-align:center;
+                width: 100px;
+                height: 100px;
+                vertical-align: top;
+                text-align: right;
+                padding: 10px 10px;
+		        }
+
+            table {
+			    border-collapse: collapse;
+                }
+
+            .done{
+                color: gray;
+            }
+
+            #Juneteenth{
+                background-image: url(img/june.jpeg);
+                background-size: cover;
+                background-position: center;
+            }
+
+            #Birthday{
+                background-image: url(img/zena.webp);
+                background-size: cover;
+                background-position: center;
+            }
+
+            #Eid{
+                background-image: url(img/eid.jpeg);
+                background-size: cover;
+                background-position: center;
+        
+            }
+
+            h3{
+                text-align: center;
+                font-size: 1.5em;
+                color: black;
+                margin-top: 50px;
+                background-color: rgb(255, 255, 255);
+                color: rgb(25, 24, 24);
+                opacity: 0.75;
+                border-radius: 10px;
+            }
+           
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1>June 2023</h1>
+		</div>
+
+        <div id="main">
+            <table>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+
+                <tr>
+                    <td class="done">28</td>
+                    <td class="done">29</td>
+                    <td class="done">30</td>
+                    <td class="done">31</td>
+                    <td >1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+    
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td id="Juneteenth">
+                        <strong>19</strong>
+                        <div class="occasion"><h3>Juneteenth</h3></div>
+                    </td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td id="Birthday">
+                        <strong>24</strong>
+                        <div class="occasion"><h3>Zena's Birthday</h3></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td id="Eid">
+                        <strong>29</strong>
+                        <div class="occasion"><h3>Eid Al-Adha</h3></div>
+                    </td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+
+            </table>
+        </div>
+	</body>
+</html>
