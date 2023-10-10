@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Image Puzzle | Scenery</title>
+    <style>
+        #header {
+            height: 100px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #image-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 600px;
+            margin: 100px auto;
+            overflow: visible;
+            position: relative;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        img {
+            width: auto;
+            max-height: 300px;
+            box-shadow: 0px 0px 10px white;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .image1 {
+            width: 400px;
+            height: 200px;
+            left: 20px;
+            top: 0;
+        }
+
+        .image2 {
+            width: 200px;
+            height: auto;
+            left: 30px;
+            top: 50px;
+        }
+
+        .image3 {
+            width: 150px;
+            height: auto;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Laguna Beach | Sunset</h1>
+    </div>
+    <div id="image-grid">
+        <div class="image-row">
+            <img src="img/beach1.jpg" alt="Beach 1" class="image1">
+            <img src="img/beach2.jpg" alt="Beach 2" class="image2">
+            <img src="img/beach3.jpg" alt="Beach 3" class="image3">
+        </div>
+        <div class="image-row">
+            <img src="img/beach4.jpg" alt="Beach 4" class="image2">
+            <img src="img/beach5.jpg" alt="Beach 5" class="image1">
+            <img src="img/beach6.jpg" alt="Beach 6" class="image3">
+        </div>
+        <div class="image-row">
+            <img src="img/beach7.jpg" alt="Beach 7" class="image3">
+            <img src="img/beach8.jpg" alt="Beach 8" class="image2">
+            <img src="img/beach9.jpg" alt="Beach 9" class="image1">
+        </div>
+    </div>
+</body>
+</html>

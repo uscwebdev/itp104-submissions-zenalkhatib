@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Photo Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+<style>
+    #header{
+        background-image: url(img/sushi1.jpeg);
+        height: 300px;
+        line-height: 200px;
+        color: white;
+        text-align: center;
+    }
+
+    #main{
+        flex: wrap;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #navbarhome{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(243, 211, 184);
+        padding: 10px;
+    }
+
+    #navbargallery{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(243, 211, 184);
+        padding: 10px;
+    }  
+
+    #navbar a:hover{
+        background-color: rgb(215, 198, 198);
+    }
+
+    #row-container1{
+        display: flex;
+        justify-content: center;
+    }
+
+    #column-container2{
+        display: flex;
+        flex-direction: row;
+    }
+    #column-container3{
+        display: flex;
+        justify-content: right;
+    }
+    #row-container4{
+        display: flex;
+        justify-content: center;
+    }
+    #row-container5{
+        
+    }
+
+    #a{
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px 15px 30px;
+    }
+    #b{
+        width: 100px;
+        height: 200px;
+        margin: 30px 15px 15px 30px;
+    }
+     #c{
+        width: 200px;
+        height: 200px;
+        margin: 30px 15px 15px 30px;
+    } #d{
+        width: 200px;
+        height: 300px;
+        margin: 30px 15px 15px 30px;
+    } #e{
+        width: 100px;
+        height: 100px;
+        margin: 30px 15px 15px 30px;
+    } #f{
+        width: 100px;
+        height: 150px;
+        margin: 30px 15px 15px 30px;
+    } #g{
+        width: 350px;
+        height: 200px;
+        margin: 30px 15px 15px 30px;
+    } #h{
+        width: 300px;
+        height: 200px;
+        margin: 30px 15px 15px 30px;
+    } #i{
+        width: 400px;
+        height: 300px;
+        margin: 30px 15px 15px 30px;
+    } #j{
+        width: 350px;
+        height: 250px;
+        margin: 30px 15px 15px 30px;
+    }
+
+    .pic{
+        background-color: lightcoral;
+        border: 10px solid black;
+    }
+
+    #footer{
+			background-color: #000000;
+			text-align: center;
+			color:#FFF;
+			height:50px;
+            width:100%;
+			line-height: 50px;
+        }
+    .overlay{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #000000;
+        text-align: center;
+        padding-top: 100px;
+        visibility: hidden;
+    }
+</style>
+</head>
+
+<body> 
+    <div id="header">
+        <h1 id="gallery-section">Gallery</h1>
+    </div>
+     
+    <div id="navbarhome">
+        <a href="interests.html#home-section">Home </a>
+    </div>
+
+    <div id="navbargallery">
+        <a href="gallery.html#gallery-section"> Gallery</a>
+    </div>
+
+    <div id="main">
+        <div id="row-container1">
+            <div id="a" class="pic"></div>
+            <div id="b" class="pic"></div>
+            <div id="c" class="pic"></div>
+            <div id="row-container5">
+                <div id="j" class="pic"></div>
+            </div>
+        </div>
+      
+        <div id="row-container4">
+            <div id="g" class="pic"></div>
+            <div id="h" class="pic"></div>
+            <div id="i" class="pic"></div>
+            <div id="column-container2">
+                <div id="d" class="pic"></div>
+                <div id="column-container3">
+                    <div id="e" class="pic"></div>
+                    <div id="f" class="pic"></div>
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+
+    <div id="footer">
+		All rights reserved to Zena Alkhatib
+	</div>
+</body>
+
+</html>
