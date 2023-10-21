@@ -5,7 +5,8 @@
     <title>Photo Gallery</title>
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">"
+
 <style>
     #header{
         background-image: url(img/sushi1.jpeg);
@@ -20,45 +21,53 @@
         background-color: rgb(255, 255, 255);
     }
 
-    #navbarhome{
-        display: flex;
-        justify-content: center;
-        background-color: rgb(243, 211, 184);
-        padding: 10px;
+    .overlay{
+        position: absolute;
+        top:0px;
+        left: 0px;
+        right: 0px;
+        bottom:0px;
+        background-color: #FFF;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+        visibility: hidden;
     }
-
-    #navbargallery{
-        display: flex;
-        justify-content: center;
-        background-color: rgb(243, 211, 184);
-        padding: 10px;
-    }  
-
-    #navbar a:hover{
-        background-color: rgb(215, 198, 198);
-    }
-
+   
     #row-container1{
         display: flex;
         justify-content: center;
     }
 
+    #row-container1:hover > .overlay{
+        visibility: visible;
+    }
+
+
     #column-container2{
         display: flex;
         flex-direction: row;
     }
+
+    #column-container2:hover > .overlay{
+        visibility: visible;
+    }
+
     #column-container3{
         display: flex;
         justify-content: right;
+    }
+
+    #column-container3:hover > .overlay{
+        visibility: visible;
     }
     #row-container4{
         display: flex;
         justify-content: center;
     }
-    #row-container5{
-        
+    #column-container4:hover > .overlay{
+        visibility: visible;
     }
-
     #a{
         width: 200px;
         height: 200px;
@@ -116,17 +125,25 @@
             width:100%;
 			line-height: 50px;
         }
-    .overlay{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        background-color: #000000;
-        text-align: center;
-        padding-top: 100px;
-        visibility: hidden;
+
+        #navbarhome{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(243, 211, 184);
+        padding: 10px;
     }
+
+    #navbargallery{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(243, 211, 184);
+        padding: 10px;
+    }  
+
+    #navbar a:hover{
+        background-color: rgb(215, 198, 198);
+    }
+
 </style>
 </head>
 

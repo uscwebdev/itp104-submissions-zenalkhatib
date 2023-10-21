@@ -4,9 +4,18 @@
     <head>
         <title>Zena Alkhatib | Student Page</title>
 
-        
+        <meta charset="utf-8">
+        <meta name="keywords" content="Student Page, ITP 104">
+        <meta name="description" content="ITP 104 Student Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <style>
-            strong{
+           body{
+            padding: 10px;  
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           }
+
+           strong{
                 background: rgb(165, 221, 238);
                 color: black
             }
@@ -20,8 +29,6 @@
                 width: 950px;
                 margin-left: auto;
                 margin-right: auto;
-               
-                
             }
 
             #second{
@@ -57,6 +64,34 @@
                 margin-left:auto;
                 margin-right: 285px;
             }
+
+            /* mobile: screen sizes = 767px */
+        @media (max-width: 767px) {
+            #container, #first {
+                width: auto;
+            }
+            #second, #third {
+                /* display: flex; */
+                flex-direction: column;
+                width: auto;
+            }
+            .column1, .column2, .column3, .column4 {
+                width: auto;
+                padding: 0px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            p, h1 {
+                text-align: center;
+            }
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            hr {
+                width: 90%;
+            }
+        }
         </style>
 
     </head>
@@ -123,6 +158,7 @@
                 <li><a href="lab_05/lab_05.html">Lab 5: Order Form Page</a></li>
                 <li><a href="lab_06/lab_06.html">Lab 6: Simple Photo Gallery</a></li>
                 <li><a href="lab_07/lab_07.html">Lab 7: Image Puzzle</a></li>
+                <li><a href="index.html">Lab 8: Responsive Student Page</a></li>
             </ul>
             </div>
             
