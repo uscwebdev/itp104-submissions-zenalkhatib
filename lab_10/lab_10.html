@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Effect | Dior Moodboard</title>
+    <style>
+         #header {
+            width: auto;
+            height: 200px;
+            margin: auto;
+            text-align: center;
+            background-image: url(img/banner.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+            font-size: 2em;
+        }
+        .container {
+            width: auto;
+            height: 420px;
+            margin-top: 40px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #dior1 {
+            width: 450px;
+            height: 225px;
+            position: absolute;
+            top: 350px;
+            left: 500px;
+        }
+        #dior2 {
+            width: 290px;
+            height: 225px;
+            position: absolute;
+            top: 350px;
+            left: 600px;
+        }
+        #dior3 {
+            width: 275px;
+            height: 225px;
+            position: absolute;
+            top: 350px;
+            left: 700px;
+        }
+        .translate {
+            transition: all 1s;
+        }
+        .container:hover > #dior1  {
+            transform: translateX(-360px) scale(1.25);
+        }
+        .container:hover > #dior2  {
+            transform: translateX(105px) scale(1.25);
+        }
+        .container:hover > #dior3  {
+            transform: translateX(380px) scale(1.25); 
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Dior Moodboard</h1>
+    </div>
+    <div class="container">
+        <img src="img/image1.avif" alt="dior1" class="translate" id="dior2">
+        <img src="img/image2.jpeg" alt="dior2" class="translate" id="dior3">
+        <img src="img/image3.jpeg" alt="dior3" class="translate" id="dior3">
+    </div> 
+</body>
+</html>
