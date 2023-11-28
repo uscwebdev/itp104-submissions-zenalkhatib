@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lebanon | July 2023</title>
+    <style>
+        #header {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            height: 200px;
+            line-height: 200px;
+        }
+        #main {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+        }
+        #left-col {
+            width: 600px;
+            margin: 50px 0px 0px 0px;
+            justify-content: center;
+        }
+        #right-col {
+            width: 600px;
+            margin: 50px 0px 0px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .measure {
+            align-items: baseline;
+        }
+        #gallery {
+            display: flex;
+            align-items: flex-start;
+        }
+        .thumbnail {
+            opacity: 0.7;
+        }
+        #party {
+            width: 500px;
+            height: auto;
+        }
+        #sunset {
+            margin: 0px 0px 0px 10px;
+            width: 200px;
+            height: auto;
+        }
+        #shower {
+            margin: 0px 0px 0px 10px;
+            width: 200px;
+            height: auto;
+        }
+       
+        #night {
+            margin: 0px 0px 0px 10px;
+            width: 200px;
+            height: auto;
+        }
+        #beach {
+            margin: 0px 0px 0px 10px;
+            width: 200px;
+            height: auto;
+        }
+        .thumbnail:hover {
+            opacity: 1.0;
+        }
+        .img-container p {
+            text-align: center;
+            visibility: hidden;
+            width: 200px;
+            height: auto;
+        }
+        .img-container1 p {
+            text-align: center;
+            visibility: hidden;
+            width: 600px;
+            height: auto;
+        }
+        .thumbnail:hover + p {
+            visibility: visible;
+        }
+        #one {
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Lebanon | July 2023</h1>
+    </div>
+
+    <div id="main">
+        <div id="left-col">
+            <div class = "img-container1">
+                <img id="party" class="thumbnail" src="img/party.jpeg" alt="Skybar">
+                <p>Nightlife is huge in lebanon with house music and positive vibes.</p>
+            </div>
+        </div>
+        <div id="right-col" class="measure">
+            <div id="one">
+                <div class = "img-container">
+                    <img id="sunset" class="thumbnail" src="img/sunset.jpeg" alt="Sunset">
+                    <p>The beaches in Lebanon are beautiful, they are known for their warm clear waters and colorful sunsets.</p>
+                </div>
+            </div>
+            <div id="one">
+                <div class = "img-container">
+                    <img id="shower" class="thumbnail" src="img/shower.jpeg" alt="Shower">
+                    <p>This shower view shows Lebanons beautoful views and architecture. This was a beautiful hotel in Batroun, Lebanon.</p>
+                </div>
+            </div>
+            <div id="one">
+                <div class = "img-container">
+                    <img id="night" class="thumbnail" src="img/night.jpeg" alt="Night">
+                    <p>City lights and views in Lebanon never dissapoint.</p>
+                </div>
+            </div>
+            <div id="one">
+                <div class = "img-container">
+                    <img id="beach" class="thumbnail" src="img/beach.jpeg" alt="Beach">
+                    <p>The clear water lagoons were relaxing and refreshing to swim.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#view').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#party').css('border', '5px solid purple')
+        })
+        $('#beachhouse').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#sunset').css('border', '5px solid purple')
+        })
+        $('#blanch').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#shower').css('border', '5px solid purple')
+        })
+        $('#blanchtwo').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#night').css('border', '5px solid purple')
+        })
+        $('#friends').click(function () {
+            $('.thumbnail').css('border', 'none')
+            $('#beach').css('border', '5px solid purple')
+        })
+    </script>
+</body>
+</html>
